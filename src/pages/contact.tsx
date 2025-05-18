@@ -198,7 +198,7 @@ const Contact: NextPage = () => {
                         <FaMapMarkerAlt size={24} />
                       </div>
                       <div>
-                        <h3 className="font-medium text-gray-700 mb-1">Location</h3>
+                        {/* <h3 className="font-medium text-gray-700 mb-1">Location</h3> */}
                         <p className="text-gray-600">Chandigarh, India</p>
                       </div>
                     </div>
@@ -227,12 +227,12 @@ const Contact: NextPage = () => {
                       <div>
                         <h3 className="font-medium text-gray-700 mb-1">GitHub</h3>
                         <a 
-                          href="https://github.com/yourusername" 
+                          href="https://github.com/Lavu2002" 
                           target="_blank" 
                           rel="noopener noreferrer" 
                           className="text-primary hover:underline"
                         >
-                          github.com/yourusername
+                          github.com/Lavu2002
                         </a>
                       </div>
                     </div>
