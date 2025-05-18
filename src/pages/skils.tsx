@@ -1,6 +1,5 @@
 // src/pages/skills.tsx
 import type { NextPage } from 'next';
-import Layout from '../components/Layout/Layout';
 import { motion } from 'framer-motion';
 
 const Skills: NextPage = () => {
@@ -71,13 +70,13 @@ const Skills: NextPage = () => {
   };
 
   return (
-    <Layout title="Skills | Lavanya Patial">
+    <>
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold mb-4 text-center">Technical Skills</h1>
           <p className="text-gray-600 mb-12 text-center max-w-2xl mx-auto">
             My technical expertise spans across various programming languages, frameworks, tools, and methodologies.
-            Here's a comprehensive overview of my skill set.
+            Here&apos;s a comprehensive overview of my skill set.
           </p>
 
           {/* Skill Categories Grid */}
@@ -137,7 +136,7 @@ const Skills: NextPage = () => {
           </div>
         </div>
       </section>
-    </Layout>
+    </>
   );
 };
 

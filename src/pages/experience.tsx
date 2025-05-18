@@ -46,7 +46,7 @@ const Experience: NextPage = () => {
         <div className="max-w-3xl mx-auto mb-12">
           <h1 className="text-4xl font-bold mb-2 text-center">Professional Experience</h1>
           <p className="text-gray-600 text-center">
-            My journey as a software developer and the companies I've had the privilege to work with.
+            My journey as a software developer and the companies I&apos;ve had the privilege to work with.
           </p>
         </div>
 

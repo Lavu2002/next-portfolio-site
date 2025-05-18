@@ -35,7 +35,7 @@ const About: NextPage = () => {
                   I specialize in <strong>Vue.js, Nuxt.js, Node.js, MongoDB,</strong> and API integrations. My work includes building dashboards, cohort visualizations, authentication flows, and performance-optimized components.
                 </p>
                 <p className="text-gray-700 mb-4 text-base md:text-lg leading-relaxed">
-                  With a Diploma in Computer Science and a Bachelor's from Chandigarh Group of Colleges, I combine solid engineering fundamentals with a product-focused mindset.
+                  With a Diploma in Computer Science and a Bachelor&apos;s from Chandigarh Group of Colleges, I combine solid engineering fundamentals with a product-focused mindset.
                 </p>
                 <a
                   href="/resume.pdf"

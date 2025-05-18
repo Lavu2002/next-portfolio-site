@@ -6,7 +6,15 @@ const item = {
   show: { opacity: 1, y: 0 }
 };
 
-const ExperienceCard = ({ experience }: { experience: any }) => {
+interface Experience {
+  title: string;
+  company: string;
+  period: string;
+  location: string;
+  achievements: string[];
+}
+
+const ExperienceCard = ({ experience }: { experience: Experience }) => {
   return (
     <motion.div className="bg-white rounded-lg shadow-md p-8" variants={item}>
       <div className="flex flex-col md:flex-row md:items-center justify-between mb-6">

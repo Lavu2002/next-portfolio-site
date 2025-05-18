@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import Image from 'next/image';
 
 interface ProjectCardProps {
   title: string;
@@ -44,7 +45,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
               sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
             />
           ) : (
-            <img
+            <Image
               src={image && image !== '#' ? image : '/images/placeholder.jpg'}
               alt={`${title} preview`}
               className="object-cover h-full w-full"

@@ -1,6 +1,5 @@
 // src/pages/contact.tsx
 import type { NextPage } from 'next';
-import Layout from '../components/Layout/Layout';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub } from 'react-icons/fa';
@@ -41,6 +40,7 @@ const Contact: NextPage = () => {
         message: ''
       });
     } catch (err) {
+      console.log(err)
       setError('There was an error sending your message. Please try again.');
     } finally {
       setIsSubmitting(false);
@@ -58,7 +58,7 @@ const Contact: NextPage = () => {
           >
             <h1 className="text-4xl font-bold mb-4 text-center">Get In Touch</h1>
             <p className="text-gray-600 mb-12 text-center max-w-2xl mx-auto">
-              I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+              I&apos;m always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
             </p>
           </motion.div>
 
@@ -76,7 +76,7 @@ const Contact: NextPage = () => {
                   
                   {isSubmitted ? (
                     <div className="bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded mb-6">
-                      Thank you for your message! I'll get back to you as soon as possible.
+                      Thank you for your message! I&apos;ll get back to you as soon as possible.
                     </div>
                   ) : (
                     <form onSubmit={handleSubmit}>
@@ -241,7 +241,7 @@ const Contact: NextPage = () => {
                   <div className="mt-8 pt-6 border-t border-gray-200">
                     <h3 className="font-medium text-gray-700 mb-3">Availability</h3>
                     <p className="text-gray-600">
-                      I'm currently open to freelance projects and new opportunities. Feel free to reach out if you'd like to discuss a potential collaboration.
+                      I&apos;m currently open to freelance projects and new opportunities. Feel free to reach out if you&apos;d like to discuss a potential collaboration.
                     </p>
                   </div>
                 </div>

@@ -100,7 +100,7 @@ const Projects: NextPage = () => {
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold mb-4 text-center">My Projects</h1>
           <p className="text-gray-600 mb-12 text-center max-w-2xl mx-auto">
-            Here's a showcase of my professional projects and personal works that demonstrate my skills and expertise.
+            Here&apos;s a showcase of my professional projects and personal works that demonstrate my skills and expertise.
           </p>
 
           <motion.div

@@ -1,6 +1,5 @@
 // src/pages/index.tsx
 import type { NextPage } from 'next';
-import Layout from '../components/Layout/Layout';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
@@ -19,6 +18,7 @@ import {
   SiGit,
   SiDocker
 } from 'react-icons/si';
+import { JSX } from 'react/jsx-runtime';
 
 const Home: NextPage = () => {
   const iconMap: Record<string, JSX.Element> = {
@@ -49,7 +49,7 @@ const Home: NextPage = () => {
               transition={{ duration: 0.5 }}
             >
               <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                Hello, I'm <span className="text-primary">Lavanya Patial</span>
+                Hello, I&apos;m <span className="text-primary">Lavanya Patial</span>
               </h1>
               <h2 className="text-2xl md:text-3xl text-gray-700 mb-6">
                 Software Development Engineer
