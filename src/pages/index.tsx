@@ -8,11 +8,18 @@ import {
   SiHtml5,
   SiCss3,
   SiJavascript,
+  SiAngular,
+  SiExpress,
   SiTypescript,
   SiNodedotjs,
+  SiReact,
+  SiNestjs,
+  SiNextdotjs,
   SiVuedotjs,
   SiNuxtdotjs,
-  SiExpress,
+  SiVercel,
+  SiPython,
+  SiDjango,
   SiMongodb,
   SiGooglecloud,
   SiGit,
@@ -25,11 +32,18 @@ const Home: NextPage = () => {
     HTML5: <SiHtml5 size={32} />,
     CSS3: <SiCss3 size={32} />,
     JavaScript: <SiJavascript size={32} />,
+    Angular: <SiAngular size={32} />,
+    'Express.js': <SiExpress size={32} />,
     TypeScript: <SiTypescript size={32} />,
     'Node.js': <SiNodedotjs size={32} />,
+    React: <SiReact size={32} />,
+    'Next.js': <SiNextdotjs size={32} />,
+    'NestJS': <SiNestjs size={32} />,  
     'Vue.js': <SiVuedotjs size={32} />,
     'Nuxt.js': <SiNuxtdotjs size={32} />,
-    'Express.js': <SiExpress size={32} />,
+    Python: <SiPython size={32} />,
+    Django: <SiDjango size={32} />,
+    Vercel: <SiVercel size={32} />,
     MongoDB: <SiMongodb size={32} />,
     AWS: <SiGooglecloud size={32} />,
     Git: <SiGit size={32} />,
@@ -39,9 +53,9 @@ const Home: NextPage = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-50 to-indigo-50 pt-40 pb-20">
+      <section className="bg-gradient-to-r from-blue-50 to-indigo-50 pt-20 md:pt-40 md:pb-20">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center justify-between">
+        <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-y-10 md:gap-y-0">
             <motion.div
               className="md:w-1/2 mb-10 md:mb-0"
               initial={{ opacity: 0, x: -50 }}
@@ -49,15 +63,13 @@ const Home: NextPage = () => {
               transition={{ duration: 0.5 }}
             >
               <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                Hello, I&apos;m <span className="text-primary">Lavanya Patial</span>
+                I&apos;m <span className="text-primary">Lavanya Patial</span>
               </h1>
               <h2 className="text-2xl md:text-3xl text-gray-700 mb-6">
                 Software Development Engineer
               </h2>
               <p className="text-gray-600 mb-8 text-lg">
-                I specialize in building modern web applications with
-                JavaScript, TypeScript, Node.js, and various frameworks.
-                Currently working at IndiaP2P, focusing on fintech solutions.
+              I develop performant, scalable web applications using a versatile tech stack — tailored for user experience and long-term maintainability.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/contact" className="bg-primary text-white px-6 py-3 rounded-md flex items-center justify-center gap-2 hover:bg-blue-700 transition-colors">
@@ -110,6 +122,14 @@ const Home: NextPage = () => {
       </section>
 
       {/* ... Other sections remain unchanged (Projects, Experience, Education, Contact CTA) */}
+      <section className="py-16 bg-gradient-to-r from-blue-50 to-indigo-50">
+  <div className="container mx-auto px-4 text-center">
+    <h2 className="text-3xl font-bold mb-8">Beyond the Code</h2>
+    <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+      Alongside my development expertise, I have a strong foundation in system design, scalable architecture, performance optimization, and clean code principles — enabling me to build solutions that are not only functional but robust and future-ready.
+    </p>
+  </div>
+</section>
     </>
   );
 };

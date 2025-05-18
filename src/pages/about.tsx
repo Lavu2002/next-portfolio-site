@@ -22,20 +22,18 @@ const About: NextPage = () => {
           >
             <h1 className="text-4xl font-bold mb-8 text-center text-gray-800">About Me</h1>
             <div className="flex flex-col md:flex-row items-center gap-8 mb-12">
-              <div className="md:w-1/3">
-                <div className="bg-primary text-white w-40 h-40 md:w-48 md:h-48 rounded-full flex items-center justify-center text-5xl md:text-6xl mx-auto shadow-lg">
-                  LP
-                </div>
-              </div>
-              <div className="md:w-2/3">
+              <div className="md:w-100">
                 <p className="text-gray-700 mb-4 text-base md:text-lg leading-relaxed">
-                  I’m <strong>Lavanya Patial</strong>, a Software Development Engineer (SDE-1) at <strong>IndiaP2P</strong> where I build and maintain production-ready fintech web applications that impact thousands of users across India.
+                  Hey there! I&apos;m <strong>Lavanya Patial</strong>, a Software Development Engineer (SDE-1) at <strong>IndiaP2P</strong>, where I build and maintain fintech applications that serve thousands of users across India.
                 </p>
                 <p className="text-gray-700 mb-4 text-base md:text-lg leading-relaxed">
-                  I specialize in <strong>Vue.js, Nuxt.js, Node.js, MongoDB,</strong> and API integrations. My work includes building dashboards, cohort visualizations, authentication flows, and performance-optimized components.
+                  I enjoy turning complex problems into clean, user-friendly web experiences. Whether it&apos;s creating interactive dashboards, crafting smooth user flows, or improving performance, I love bringing ideas to life through thoughtful design and efficient code.
                 </p>
                 <p className="text-gray-700 mb-4 text-base md:text-lg leading-relaxed">
-                  With a Diploma in Computer Science and a Bachelor&apos;s from Chandigarh Group of Colleges, I combine solid engineering fundamentals with a product-focused mindset.
+                  With a Diploma in Computer Science and a Bachelor&apos;s degree from Chandigarh Group of Colleges, I bring strong technical fundamentals paired with a product-focused mindset. I&apos;m always eager to learn, collaborate, and build tools that make a real impact.
+                </p>
+                <p className="text-gray-700 mb-4 text-base md:text-lg leading-relaxed">
+                  Outside of work, you&apos;ll usually find me exploring new ideas, learning something new, or just vibing to music while refining a UI.
                 </p>
                 <a
                   href="/resume.pdf"
@@ -53,7 +51,7 @@ const About: NextPage = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.1 }}
           >
-            <h2 className="text-3xl font-bold mb-8 text-center text-gray-800 bg-gradient-to-r from-blue-50 to-indigo-50" >What I Do</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center text-gray-800" >What I Do</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {[
                 {
@@ -86,7 +84,7 @@ const About: NextPage = () => {
             </div>
           </motion.div>
 
-          <motion.div
+          {/* <motion.div
             className="mt-16"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -108,7 +106,7 @@ const About: NextPage = () => {
                 As an SDE-1, I strive to deliver stable features, collaborate effectively with cross-functional teams, and grow with every project I ship.
               </p>
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </section>
     </Layout>
